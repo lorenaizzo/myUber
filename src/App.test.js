@@ -360,51 +360,6 @@ describe('Test del formulario', ()=>{
   
 
   /**
-   * Validaciones de año
-   * 1. Año < 1970
-   * 2. Año > new Date()
-   */
-  /*
-  it("Año < 1970", async ()=>{
-    const {getByTestId, getByPlaceholderText} = render(<DriverForm/>);
-
-    let year = getByPlaceholderText('yearDP');
-
-    await wait(()=>{
-      fireEvent.change(year, {
-        target: {
-          value: Date.parse('01/01/1900')
-        }
-      })
-      fireEvent.blur(year)
-    });
-
-    expect(getByTestId('driver-year-error').innerHTML).toBe("Año mínimo es 1970");
-
-  });
-
-
-  it("Año > new Date()", async ()=>{
-    const {getByTestId, getByPlaceholderText} = render(<DriverForm/>);
-
-    let year = getByPlaceholderText('yearDP');
-
-    await wait(()=>{
-      fireEvent.change(year, {
-        target: {
-          value: Date.parse('01/01/2030')
-        }
-      })
-      fireEvent.blur(year)
-    });
-    
-
-    expect(getByTestId('driver-year-error').innerHTML).toBe("Año máximo "+(new Date()).getFullYear());
-
-  });
-*/
-
-  /**
    * Validacion de conexion enviando datos correctos desde el formulario
    * Servidor responde ok
    */
