@@ -1,68 +1,68 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# My Uber
 
-## Available Scripts
+Pequeña aplicación de carga de datos de conductores.
+Se ingresas datos personales del conductor y de su vehículo.
 
-In the project directory, you can run:
+### Componentes
 
-### `npm start`
+Se creó la siguiente estructura de carpetas dentro de src
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+components
+    api         -> Driver.js
+    driver-form -> Driverform.js
+                -> driver.css
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+#### api -> Driver.js
 
-### `npm test`
+Este archivo contiene la logica de conexión con el servidor.
+Se utiliza la biblioteca axios para conexión.
+El método para el manejo de asincronismo es async/await
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### driver-form -> Driverform.js
 
-### `npm run build`
+Este archivo contiene el formulario en si.
+Para la creación del formulario se utilizó Formik. (https://formik.org/)
+Para la validación del formulario se utilizó Yup. (https://github.com/jquense/yup)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Algunas expresiones regulares fueron utilizadas para la validación del número de teléfono y patente. En el caso de la patente se verifica según esquema de patentes vigentes en la actualidad en Argentina.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Otros datos
 
-### `npm run eject`
+- Se utilizo bootstrap para el diseño. (https://reactstrap.github.io/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Se redefinieron algunos estilos de bootstrap mediante css.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Para los íconos de "Social Media" se utilizó FontAwasome (https://fontawesome.com/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Ejecución
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Este proyecto fue creado con [Create React App](https://github.com/facebook/create-react-app).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Antes de comenzar
 
-### Code Splitting
+En la carpeta de la aplicación ejecutar por línea de comandos:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+`npm install`
 
-### Analyzing the Bundle Size
+Este comando instalará las dependencias que el sistema necesita para funcionar.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### Para ejecutar la aplicación
 
-### Making a Progressive Web App
+En la carpeta de la aplicación ejecutar por línea de comandos:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+`npm start`
 
-### Advanced Configuration
+Esto ejecutará la aplicación en modo desarrollo.
+Abrir en el navegador [http://localhost:3000](http://localhost:3000)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+### Test
 
-### Deployment
+En la carpeta de la aplicación ejecutar por línea de comandos:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+`npm test`
 
-### `npm run build` fails to minify
+Lo cual ejecutará los testeos de la aplicación.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

@@ -1,0 +1,90 @@
+
+.container-form {
+    width: 50%;
+
+    display: grid;
+    grid-template-areas: "personal car";
+    grid-template-columns: 1fr 1fr;
+
+    color: darkslategray;
+
+    -webkit-box-shadow: 0 1px 10px 1px rgb(47, 79, 79, 1);
+    -moz-box-shadow: 0 1px 10px 1px rgba(47, 79, 79, 1);
+    box-shadow: 0 1px 10px 1px rgba(47, 79, 79, 1);
+}
+
+.personal {
+    grid-area: personal;
+    background-color: whitesmoke;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+.car {
+    grid-area: car;
+    background-color: darkcyan;
+    color: whitesmoke;
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5px;
+
+}
+
+.my-error {
+    color: #B82601;
+    font-size: 15px;
+}
+
+.button-zone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.button {
+    background-color: whitesmoke !important;
+    color: darkcyan !important;
+}
+
+.button:hover {
+    background-color: blanchedalmond !important;
+}
+
+.message {
+    padding-left: 10px;
+}
+
+.error {
+    height: 10px;
+}
+
+
+
+@media (max-width: 400px) {
+
+    .container-form {
+        grid-template-areas: 
+                        "personal"
+                        "car";
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    
+}
