@@ -8,8 +8,8 @@ Se ingresas datos personales del conductor y de su vehículo.
 Se creó la siguiente estructura de carpetas dentro de src
 
 components
-    api         -> Driver.js
-    driver-form -> Driverform.js
+    api         -> Driver.js <br/><br/>
+    driver-form -> Driverform.js<br/>
                 -> driver.css
 
 #### api -> Driver.js
