@@ -10,7 +10,7 @@ Se creó la siguiente estructura de carpetas dentro de src
 components
     api         -> Driver.js <br/><br/>
     driver-form -> Driverform.js<br/>
-                -> driver.css
+                
 
 #### api -> Driver.js
 
@@ -36,7 +36,8 @@ Algunas expresiones regulares fueron utilizadas para la validación del número 
 - Para los íconos de "Social Media" se utilizó FontAwasome (https://fontawesome.com/)
 
 
-
+<br/>
+</br>
 ## Ejecución
 
 Este proyecto fue creado con [Create React App](https://github.com/facebook/create-react-app).
